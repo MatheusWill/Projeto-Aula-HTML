@@ -6,7 +6,7 @@
     /*  Usado para travar o elemento quando o padding tirar ele do tamanho da div*/
     box-sizing: border-box;
 }
-h1{
+h1, h2{
     width: 100%;
     height: 50px;
     font-family: arial;
@@ -20,6 +20,29 @@ h1{
 h1::first-letter{
     font-size: 1.6em;
     color: darkviolet;
+}
+h2{
+    font-size: 1.3em;
+    text-transform: none;
+    color: #6d0000;
+}
+p{
+    width: inherit;
+/*Usado para colocar altura minima */
+    min-height: 20px;
+/*Deixa a altura automatica*/
+    height: auto;
+/*Usado para não ter estouro com a barra de rolagem*/
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-family: verdana;
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 /*SEÇÃO MENU */
 .conteudo{
@@ -114,15 +137,188 @@ h1::first-letter{
 #containerEmpresa{
     width: 100%;
     height: 600px;
-    background-color: aliceblue;
 }
 #sobreEmpresa{
     width: 100%;
     height: 300px;
-    background-color: aqua;
 }
 #historicoEmpresa{
     width: 100%;
     height: 250px;
-    background-color: darkgoldenrod;
 }
+#imagemSobre{
+    width: 300px;
+    height: inherit;
+    background-color: crimson;
+    float: left;
+    margin-right: 15px;
+}
+#textoSobre{
+    width: 600px;
+    height: inherit;
+    background-color: #2020e6;
+    float: left;
+    margin-right: 15px;
+}
+#galeriaSobreLeft, 
+#galeriaSobreRight{
+    width: 170px;
+    height: inherit;
+    float: left;
+    margin-right: 15px;
+}
+.imagemGaleriaSobre{
+    width: 150px;
+    height: 130px;
+    background-color: darkblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+#historico{
+    width: 550px;
+    height: 200px;
+    float: left;
+    margin-right: 15px;
+}
+#imagemHistorico{
+    width: 300px;
+    height: 200px;
+    background-color: blueviolet;
+    float: left;
+    margin-right: 15px;
+}
+#textoHistorico{
+    width: 400px;
+    height: 200px;
+    background-color: chartreuse;
+    float: left;
+    margin-right: 15px;
+}
+#iconeTextoHistorico,
+#textoComplHistorico{
+    width: inherit;
+    background-color: deeppink;
+    margin-bottom: 10px;
+}
+#iconeTextoHistorico{
+    height: 110px;
+}
+#textoComplHistorico{
+    height: 80px;
+}
+#iconeHistorico, 
+#textoHistoricoPrinc{
+    height: inherit;
+    background-color: darkturquoise;
+    float: left;
+}
+#iconeHistorico{
+    width: 120px;
+    margin-right: 30px;
+}
+#textoHistoricoPrinc{
+    width: 380px;
+}
+/*SEÇÃO DE SERVIÇOS*/
+#containerServicos{
+    width: 100%;
+    height: 500px;
+}
+#servicosLeft, 
+#servicosRight{
+    height: 450px;
+    float: left;
+    margin-right: 50px;
+}
+#servicosLeft{
+    width: 650px;
+}
+#servicosRight{
+    width: 550px;
+}
+#textoServicoLeft, 
+#galeriaServicoLeft{
+    width: inherit;
+    background-color: brown;
+    margin-bottom: 15px;
+}
+#textoServicoLeft{
+    height: 250px;
+}
+#galeriaServicoLeft{
+    height: 185px;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+.imagemGaleriaServicos{
+    width: 150px;
+    height: 150px;
+    background-color: currentColor;
+    float: left;
+    margin-right: 10px;
+}
+#servicosDestaqueTexto,
+#servicosDestaque{
+    width: inherit;
+    background-color: fuchsia;
+    margin-bottom: 10px;
+}
+#servicosDestaque{
+    height: 250px;
+}
+#servicosDestaqueTexto{
+    height: 140px;
+}
+#imagemServicoDestaque,
+#textoServicoDestaque{
+    height: inherit;
+    float: left;
+    background-color: aqua;
+    margin-right: 15px;
+}
+#imagemServicoDestaque{
+    width: 200px;
+}
+#textoServicoDestaque{
+    width: 320px;
+}
+/*SEÇÃO DE PRODUTOS*/
+#containerProdutos{
+    width: 100%;
+    height: 600px;
+    background-color: #1e49ff;
+}
+.cardProduto{
+    width: 300px;
+    height: 350px;
+    background-color: aliceblue;
+    float: left;
+    margin-right: 50px;
+    margin-left: 80px;
+    box-shadow: 10px 10px 10px #000000;
+}
+#containerProdutos h1{
+    margin-bottom: 50px;
+}
+.cardProduto h2{
+    text-align: center;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: #18007b;
+}
+.imagemCard{
+    width: 150px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkviolet;
+    margin-bottom: 10px;
+}
+.textoCard{
+    width: inherit;
+    height: 190px;
+    background-color: darkviolet;
+}
+
+
