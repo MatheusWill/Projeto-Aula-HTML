@@ -1,35 +1,77 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
     <head>
         <title>AULA 7 - WIREFRAME</title>
-        <link rel="stylesheet" type="text/css" href="CSS/WIREFRAME.css"/>
         <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="CSS/WIREFRAME.css"/>
+        
+<!--
+        <script src="js/jquery.js"></script>
+        <script src="js/ancora.js"></script>
+-->
     </head>
     <body>
+<!--
+    TAGS de estrutura HTML5
+
+        <header> - representa a seção do cabeçalho do site
+        <footer> - representa a seção do rodapé do site
+        <nav>    - representa a seção menu do site, sendo ultilizado apenas no menu relevante/navegação do site
+        <section> - representa as seção de conteudo do site
+        <article> - representa um conteudo de terceiros, que podemos colocar no site (Citação de um autor, Blog, Forum, area de reportagem que vão vir de outros sites)
+        <aside> - representa uma area de propagandas de outro site (Divulgar produtos de terceiros, anuncios)
+        <figure> - indica que ali tera uma imagem (<img>), que é relevante para o assunto do seu site
+        <figcaption> - permite colocar uma legenda na imagem (não sendo obrigatoria)
+        <video> - permite colocar video
+        <canvas> - permite criar um desenho
+        <audio> - permite colocar um audio
+-->
+        
 <!--DIV SEÇÃO DO CABEÇALHO -->
-        <div id="containerMenu">
-<!--DIV QUE CENTRALIZA O MENU-->
+        <header id="containerMenu">
+            <!--DIV QUE CENTRALIZA O MENU-->
             <div class="conteudo">
-<!--DIV LOGO-->
-                <div id="logo"></div>
-<!--DIV DO MENU-->
-                <div id="menu">
-<!--LISTA DO MENU-->
-                    <ul id="listMenu">
-                        <li class="menuItem">Home</li>
-                        <li class="menuItem">Empresa</li>
-                        <li class="menuItem">Serviços</li>
-                        <li class="menuItem">Produtos</li>
-                        <li class="menuItem">Contatos</li>
-                    </ul>
+                <!--DIV LOGO-->
+                <div id="logo">
+                    <figure>
+<!--                        <img>-->
+                    </figure>
                 </div>
-<!--DIV REDE SOCIAIS-->
+                <!--DIV DO MENU-->
+                <nav id="menu">
+                    <!--LISTA DO MENU-->
+                    <ul id="listMenu">
+                        <li class="menuItem">
+<!--                            <a href="#containerSlogan"/>    -->
+                            Home
+                        </li>
+                        <li class="menuItem">
+<!--Usado para fazer uma ancora num link, quando clicar ele levar para a seção-->
+<!--                            <a href="#containerEmpresa"/>-->
+                            Empresa
+                        </li>
+                        <li class="menuItem">
+<!--                            <a href="#containerServicos"/>-->
+                            Serviços
+                        </li>
+                        <li class="menuItem">
+<!--                            <a href="#containerProdutos"/>-->
+                            Produtos
+                        </li>
+                        <li class="menuItem">
+<!--                            <a href="#containerContatos"/>-->
+                            Contatos
+                        </li>
+                    </ul>
+                </nav>
+                <!--DIV REDE SOCIAIS-->
                 <div id="redesSociais">
                     <div class="iconeRedeSocial"></div>
                     <div class="iconeRedeSocial"></div>
                     <div class="iconeRedeSocial"></div>
                 </div>
             </div>
-        </div>
+        </header>
 <!--DIV SEÇÃO DO SLOGAN -->
         <div id="containerSlogan">
             <div id="slogan">
@@ -40,7 +82,7 @@
         </div>
 <!--DIV SEÇÃO DA EMPRESA -->
         <div id="containerEmpresa">
-            <div class="conteudo">
+            <section class="conteudo">
                 <h1>Sobre a Empresa</h1>
                 <div id="sobreEmpresa">
                     <div id="imagemSobre"></div>
@@ -85,11 +127,11 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
 <!--DIV SEÇÃO DE SERVIÇOS -->
         <div id="containerServicos">
-            <div class="conteudo">
+            <section class="conteudo">
                 <h1>Serviços</h1>
                 <div id="servicosLeft">
                     <div id="textoServicoLeft">
@@ -122,32 +164,77 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
 <!--DIV SEÇÃO PRODUTOS -->
         <div id="containerProdutos">
-            <div class="conteudo">
+            <section class="conteudo">
                 <h1>Produtos</h1>
                 <div class="cardProduto">
                     <h2>Produto 1</h2>
                     <div class="imagemCard"></div>
-                    <div class="textoCard"></div>
+                    <div class="textoCard">
+                        <p>
+                            And take your book with you! Don't you get it? You could make a fortune with this book, let me show you. (2015 Biff turns on the radio. During the following he's looking through the sports almanac to find the result.
+                        </p>
+                    </div>
                 </div>
                 <div class="cardProduto">
                     <h2>Produto 2</h2>
                     <div class="imagemCard"></div>
-                    <div class="textoCard"></div>
+                    <div class="textoCard">
+                        <p>
+                            And take your book with you! Don't you get it? You could make a fortune with this book, let me show you. (2015 Biff turns on the radio. During the following he's looking through the sports almanac to find the result.
+                        </p>
+                    </div>
                 </div>
                 <div class="cardProduto">
                     <h2>Produto 3</h2>
                     <div class="imagemCard"></div>
-                    <div class="textoCard"></div>
+                    <div class="textoCard">
+                        <p>
+                            And take your book with you! Don't you get it? You could make a fortune with this book, let me show you. (2015 Biff turns on the radio. During the following he's looking through the sports almanac to find the result.
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
 <!--DIV SEÇÃO CONTATOS -->
         <div id="containerContatos">
-            
+            <section class="conteudo">
+                <h1>Contatos</h1>
+                <div id="mapaContato"></div>
+                <div id="dadosContato">
+                <p>
+                    YES! (Marty watches as Doc and Clara, staring into each other's eyes, fly away from the Delorean. Marty slams the gull-wing door and get ready to travel back to the future. The Delorean hits 88 MPH and they shoot off into 1985. The locomotive, on fire,     
+                </p>
+                <p>
+                    YES! (Marty watches as Doc and Clara, staring into each other's eyes, fly away from the Delorean. Marty slams the gull-wing door and get ready to travel back to the future. The Delorean hits 88 MPH and they shoot off into 1985. The locomotive, on fire,     
+                </p>
+                </div>
+                <div id="imagemFilialContato">
+                    <div class="fotoFilial"></div>
+                    <div class="fotoFilial"></div>
+                </div>
+                <div id="endereçoFilialContato">
+                    <p>
+                    YES! (Marty watches as Doc and Clara, staring into each other's eyes, fly away from the Delorean. Marty slams the gull-wing door and get ready to travel back 
+                <p>
+                    YES! (Marty watches as Doc and Clara, staring into each other's eyes, fly away from the Delorean. Marty slams the gull-wing door and get ready to travel back      
+                </p>
+                </div>
+            </section>
         </div>
+<!--    DIV SEÇÃO RODAPÉ-->
+        <footer id="containerRodape">
+            <div class="conteudo">
+                <div id="direitosReservados">
+                    <p>
+                        Lorraine. Marty<br>
+                        that was very interesting music. that was very interesting music.
+                    </p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

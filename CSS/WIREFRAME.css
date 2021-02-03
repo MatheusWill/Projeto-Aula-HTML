@@ -43,6 +43,13 @@ p{
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: #000;
+}
+a{
+    text-decoration: none;
+}
+li a{
+    color: #fff;
 }
 /*SEÇÃO MENU */
 .conteudo{
@@ -57,6 +64,10 @@ p{
     width: 100%;
     height: 50px;
     background-color: #000000;
+/*  Fixiar o menu na hora de rolagem*/
+    position: fixed;
+/*  Permite atribuir um valor na ordem de criação no eixo z, maior o elemento, fica acima do outro, 2 na frente do 1*/
+    z-index: 999;
 }
 #logo{
     width: 150px;
@@ -287,7 +298,11 @@ p{
 #containerProdutos{
     width: 100%;
     height: 600px;
-    background-color: #1e49ff;
+    background-image: url(../IMAGENS/fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .cardProduto{
     width: 300px;
@@ -300,6 +315,8 @@ p{
 }
 #containerProdutos h1{
     margin-bottom: 50px;
+/*    background-color: RGBA(255,255,255,0.5);*/
+    color: #fff;
 }
 .cardProduto h2{
     text-align: center;
@@ -320,5 +337,62 @@ p{
     height: 190px;
     background-color: darkviolet;
 }
-
-
+/*SEÇÃO CONTATOS*/
+#containerContatos{
+    width: 100%;
+    height: 450px;
+    background-color: #2a5c06;
+}
+#mapaContato{
+    width: 350px;
+    height: 350px;
+    background-color: aqua;
+    float: left;
+    margin-right: 20px;
+}
+#dadosContato{
+    width: 400px;
+    height: 350px;
+    background-color: beige;
+    float: left;
+    margin-right: 20px;
+}
+#imagemFilialContato{
+    width: 210px;
+    height: 350px;
+    background-color: chocolate;
+    float: left;
+    margin-right: 20px;
+    padding-top: 15px;
+}
+#endereçoFilialContato{
+    width: 280px;
+    height: 350px;
+    background-color:burlywood;
+    float: left;
+}
+.fotoFilial{
+    width: 180px;
+    height: 150px;
+    background-color: currentColor;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*SEÇÃO RODAPÉ*/
+#containerRodape{
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+}
+#direitosReservados{
+    width: 600px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+#direitosReservados p{
+    text-align: center;
+    color: #ccc;
+    font-size: 0.9em;
+}
